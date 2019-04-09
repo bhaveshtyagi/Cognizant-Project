@@ -1,6 +1,6 @@
 .snowflake {
   position: fixed;
-  background-color: red;
+  background-color: green;
   user-select: none;
   z-index: 1000;
   pointer-events: none;
@@ -12,7 +12,7 @@
 
 .button ,.submit{
   border-radius: 4px;
-  background-color: #cc9900;
+  background-color: #ff661a;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -22,6 +22,8 @@
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  opacity: 1.2;
+  border-radius: 22px;
 }
 
 .button span {
@@ -29,6 +31,7 @@
   display: inline-block;
   position: relative;
   transition: 0.5s;
+   opacity: 1;
 }
 
 .button span:after {
@@ -38,12 +41,15 @@
   top: 0;
   right: -20px;
   transition: 0.5s;
+   opacity: 1;
 }
 
 .button:hover span {
   padding-right: 25px;
-  color: #ff6600;
+  opacity: 1;
+
 }
+.button:hover {opacity: 0.6}
 
 .button:hover span:after {
   opacity: 1;
