@@ -83,7 +83,7 @@ body,html {
    background-image: url("https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
    background-repeat: none;
     background-position: center;
-      height: 100%;
+      height: 90%;
   margin: -20 px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,8 +100,6 @@ body,html {
   #form input{
     background: transparent;
       border-bottom: 2px solid black;
-      
-             
   }
   
   
@@ -110,6 +108,7 @@ body,html {
  font-size: 18px;
  color:#000000;
  background-color: #660033;
+ margin-right:39px;
  padding:5px 5px 5px 5px ;
  }
   #btn:hover{
