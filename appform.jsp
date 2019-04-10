@@ -94,18 +94,28 @@ body,html {
   padding-left:25%;
   padding-right:25%;
   width:50%;
-height:100%;
+ height:100%;
    font-size: 25px;
   }
+  #form input{
+    background: transparent;
+      border-bottom: 2px solid black;
+      
+             
+  }
+  
+  
  #btn{
- border-radius:5px;
- color:#2d6d9c;
- background-color: #83de3b;
- padding:5px 5px 5px 5px;
+ border-radius:8px;
+ font-size: 18px;
+ color:#000000;
+ background-color: #660033;
+ padding:5px 5px 5px 5px ;
  }
   #btn:hover{
-   border-radius:5px;
+   border-radius:8px;
  color:#13060f;
+  font-size: 18px;
  background-color: #deaa3b;
  padding:5px 5px 5px 5px;
  }
@@ -121,11 +131,15 @@ height:100%;
 <div id="form"><center>
 <h1>Fill Details</h1>
 <form action="FormServlet" method="post" name="forminput" onsubmit="return checkfield()"><br><br>
-<b>First Name :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" id="round"><br><br>
-<b>Last Name : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname" id="round"><br><br>
-<b>Age : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age" id="round"><br><br>
+<b>First Name :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" id="round"><br><br>
+<b>Last Name : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname" id="round"><br><br>
+<b>Age : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="age" id="round"><br><br>
 
-<b>Gender : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select  name="gender" id="round">
+<b>Gender : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;
+
+<select  name="gender" id="round"  style="width: 180px;">
 <option value="none">Select</option>
 <option value="male">Male</option>
 <option value="female">Female</option>
@@ -133,14 +147,15 @@ height:100%;
 </select><br><br>
 
 <b>Contact Number : </b><input type="text" name="contact" id="round"><br><br>
-<b>UID Number : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uid" id="round"><br><br>
-<b>Password : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pass" id="round"><br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="submit" id="btn">
+<b>UID Number : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="uid" id="round"><br><br>
+<b>Password : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pass" id="round"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value="Submit"id="btn">
 <br><span style="color: red"><%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%></span>
 </form></center>
 
 <br><br>
-<center><a href="index.html">Home</a></center>
+<center><a href="index.html"><img src ="https://raw.githubusercontent.com/bhaveshtyagi/Cognizant-Project/master/Home_Project.jpeg"/></a></center>
 </div>
 </body>
 </html>
