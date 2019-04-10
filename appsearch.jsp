@@ -28,7 +28,7 @@ body,html {
    background-image: url("https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
    background-repeat: none;
     background-position: center;
-      height: 100%;
+      height: 90%;
   margin: -20 px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,15 +46,34 @@ color:red;
 color:red;
  background-color: white; 
 }
+
+  #form{
+  padding-left:25%;
+  padding-right:25%;
+  padding-top:69px;
+  width:50%;
+ height:100%;
+   font-size: 25px;
+  }
+  
    #btn{
-   border-radius:5px;
- color:#2d6d9c;
- background-color: #83de3b;
- padding:5px 5px 5px 5px;
+ border-radius:8px;
+ font-size: 18px;
+ color:#000000;
+margin-left:5px;
+ padding:5px 5px 5px 5px ;
+ }
+ 
+ #round{
+ border-radius:20px;
+     background: transparent;
+      border-bottom: 2px solid black;
+      margin-right:20px;
  }
  #btn:hover{
-   border-radius:5px;
+   border-radius:8px;
  color:#13060f;
+  font-size: 18px;
  background-color: #deaa3b;
  padding:5px 5px 5px 5px;
  }
@@ -62,12 +81,13 @@ color:red;
 </head>
 <body>
 <center><div >
-<form action="status.jsp" method="post" name="search" onsubmit="return checkfield()"><br><br>
-UID : <input type="text" name="uid"><br><br>
-<input type="submit" value="search" id="btn">
+<form action="status.jsp" method="post" name="search" onsubmit="return checkfield()" id="form"><br><br>
+<b>UID : </b>
+<input type="text" name="uid" id = "round"><br><br>
+<input type="submit" value="Search" id="btn">
 </form></div>
 </center>
 <br><br><br>
-<center><a href="index.html">Home</a></center>
+<center><a href="index.html"><img src ="https://raw.githubusercontent.com/bhaveshtyagi/Cognizant-Project/master/Home_Project.jpeg"/></a></center>
 </body>
 </html>
