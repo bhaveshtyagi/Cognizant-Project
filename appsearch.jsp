@@ -20,8 +20,11 @@
 	</script>
 	<style>
 	h1{
-color:yellow;
- background-color: #765af1; 
+color:black;
+font-size: 55px;
+font-family:cursive;
+padding-top: 69px;
+
 }
 
 body,html {
@@ -50,7 +53,7 @@ color:red;
   #form{
   padding-left:25%;
   padding-right:25%;
-  padding-top:69px;
+
   width:50%;
  height:100%;
    font-size: 25px;
@@ -81,10 +84,14 @@ margin-left:5px;
 </head>
 <body>
 <center><div >
+<center><h1>Login</h1></center>
 <form action="status.jsp" method="post" name="search" onsubmit="return checkfield()" id="form"><br><br>
-<b>UID : </b>
+<b>UID : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="text" name="uid" id = "round"><br><br>
-<input type="submit" value="Search" id="btn">
+
+<b>Password : </b>
+<input type="password" name="pass" id = "round"><br><br>
+<input type="submit" value="Login" id="btn">
 </form></div>
 </center>
 <br><br><br>
